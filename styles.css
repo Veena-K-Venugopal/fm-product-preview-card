@@ -1,0 +1,110 @@
+:root {
+    --dk-cy: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dk-bl: hsl(212, 21%, 14%);
+    --dk-gy-bl: hsl(228, 12%, 48%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    /* Centers the main-card horizontally */
+    align-items: center;
+    /* Centers the main-card vertically */
+    min-height: 100vh;
+    /* Ensures the body takes at least the full height of the viewport */
+    margin: 0;
+}
+
+.main-card {
+    border-radius: 12px;
+    max-width: 90%;
+    width: 100%;
+    /* Fallback to ensure full width in narrow viewports */
+    background-color: white;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    display: block;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem;
+}
+
+.font1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.font2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .875rem;
+    color: var(--dk-gy-bl);
+    font-weight: 500;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.title h2 {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    line-height: 1.5;
+}
+
+.title h1 {
+    color: var(--dk-bl);
+    line-height: 1;
+}
+
+.description {
+    line-height: 1.5;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: .4fr .6fr;
+    gap: 1.5rem;
+}
+
+.sale-price {
+    color: var(--dk-cy);
+}
+
+.retail-price {
+    align-self: center;
+    text-decoration: line-through;
+    text-decoration-color: var(--dk-gy-bl);
+}
+
+.main-btn {
+    font-weight: 700;
+    color: white;
+    background-color: var(--dk-cy);
+    padding: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--dk-cy);
+    font-size: 1rem;
+}
+
+.icon {
+    margin-right: 10px;
+}
